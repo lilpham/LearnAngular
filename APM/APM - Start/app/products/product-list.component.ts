@@ -4,6 +4,4 @@ import { Component } from '@angular/core';
 	selector: 'pm-products',
 	templateUrl: 'app/products/product-list.component.html'
 })
-export class ProductListComponent {
-
-}
+export class ProductListComponent { }
