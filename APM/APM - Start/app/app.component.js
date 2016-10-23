@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var product_service_1 = require('./products/product.service');
 var AppComponent = (function () {
     function AppComponent() {
         this.pageTitle = 'Acme Product Mangement';
@@ -16,7 +17,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'pm-app',
-            template: "\n\t<div><h1>{{pageTitle}}</h1>\n\t\t<div>My First Component</div>\n\t\t<pm-products></pm-products>\n\t</div>\n\t"
+            template: "\n\t<div><h1>{{pageTitle}}</h1>\n\t\t<div>My First Component</div>\n\t\t<pm-products></pm-products>\n\t</div>\n\t",
+            providers: [product_service_1.ProductService]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
